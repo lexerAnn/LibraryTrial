@@ -1,4 +1,4 @@
-package com.librarytrial
+package com.mylibrary
 
 import android.content.Context
 import android.content.Intent

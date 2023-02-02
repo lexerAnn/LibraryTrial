@@ -3,9 +3,9 @@ package com.librarytrial
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
-class BasicActivity : AppCompatActivity() {
+class TestingActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_basic)
+        setContentView(R.layout.activity_testing)
     }
 }

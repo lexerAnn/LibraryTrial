@@ -1,4 +1,4 @@
-package com.librarytrial
+package com.mylibrary
 
 import android.app.Activity
 import android.os.Build
@@ -7,7 +7,8 @@ import android.os.Bundle
 import android.text.InputType
 import android.util.SparseArray
 import android.view.View
-import com.librarytrial.databinding.ActivityMainBinding
+import com.mylibrary.databinding.ActivityMainBinding
+
 
 class KeyBoardActivity(): AppCompatActivity(),View.OnClickListener{
 
