@@ -28,7 +28,6 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             binding.pinEditInput.setRawInputType(InputType.TYPE_NULL)
             binding.pinEditInput.setTextIsSelectable(true)
         }
-
         binding.button1.setOnClickListener(this)
         keyValues.apply {
             put(R.id.button1, "1")
