@@ -1,5 +1,7 @@
 package com.librarytrial
 
+import android.app.Activity
+import android.content.Intent
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -8,7 +10,14 @@ import android.util.SparseArray
 import android.view.View
 import com.librarytrial.databinding.ActivityMainBinding
 
-class MainActivity : AppCompatActivity(), View.OnClickListener {
+class MainActivity(): AppCompatActivity(),View.OnClickListener{
+
+    open class Builder(baseActivity: Activity) {
+        init {
+          baseActivity.baseContext.gotoActivity<MainActivity>()
+        }
+    }
+
     private var keyValues = SparseArray<String>()
     var code = StringBuffer()
 
@@ -39,4 +48,11 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         code.append(value)
         binding.pinEditInput.setText(code)
     }
+
+//     open class Builder(activity: Activity){
+//       init {
+//           activity.baseContext.gotoActivity<Activity>()
+//       }
+//    }
+
 }
