@@ -1,7 +1,6 @@
 package com.librarytrial
 
 import android.app.Activity
-import android.content.Intent
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -10,11 +9,17 @@ import android.util.SparseArray
 import android.view.View
 import com.librarytrial.databinding.ActivityMainBinding
 
-class MainActivity(): AppCompatActivity(),View.OnClickListener{
+class KeyBoardActivity(): AppCompatActivity(),View.OnClickListener{
 
     open class Builder(baseActivity: Activity) {
         init {
-          baseActivity.baseContext.gotoActivity<MainActivity>()
+          baseActivity.baseContext.gotoActivity<KeyBoardActivity>()
+        }
+    }
+
+    companion object {
+        fun Builder(activity: Activity){
+            activity.gotoActivity<KeyBoardActivity>()
         }
     }
 
