@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/pinText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please enter current PIN to continue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="30dp"/>
+
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/pinEditInput"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:cursorVisible="false"
+            app:layout_constraintTop_toBottomOf="@id/pinText"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/button1"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        app:layout_constraintTop_toBottomOf="@id/pinEditInput"
+        app:layout_constraintStart_toStartOf="parent"
+        app:cardUseCompatPadding="true"
+        app:cardCornerRadius="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="1"
+            android:gravity="center"/>
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
